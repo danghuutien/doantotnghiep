@@ -1,0 +1,27 @@
+{
+    "name": "sudo/golden-time",
+    "description": "Packages about golden time",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Tran Minh Trong",
+            "email": "trongtm102@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\GoldenTime\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\GoldenTime\\Providers\\GoldenTimeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "sudo/contact",
+    "description": "Contact Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Contact\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Contact\\Providers\\ContactServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "sudo/theme-default",
+    "description": "Cau truc file mau",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Theme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Theme\\Providers\\CustomMailServiceProvider",
+                "Sudo\\Theme\\Providers\\ThemeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

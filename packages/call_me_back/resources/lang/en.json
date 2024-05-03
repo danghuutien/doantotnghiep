@@ -1,0 +1,24 @@
+{
+	"Gọi cho tôi": "CallMeBack",
+	"STT" : "Order",
+	"Xuất Excel": "Export",
+	"Số điện thoại": "Phone",
+	"Đường dẫn trang": "Path Current Page",
+	"Tên trang hiện tại" : "Current page name",
+	"Xác nhận": "Active",
+
+	"Chờ xử lý": "Pending",
+	"Đã gọi khách": "Called the guest",
+
+	"Hiện": "Show",
+	"Ẩn": "Hide",
+	"Xuất excel" : "Export",
+	"Gọi lại cho tôi": "CallMeBack",
+
+	"Nhập số điện thoại của bạn...": "Enter your phone number...",
+	"Vui lòng nhập đúng số điện thoại!" : "Please enter your phone number!",
+	"Có lỗi xảy ra!" : "An error occurred!",
+	"Bạn chưa điền số điện thoại!" : "Please enter your phone number!",
+	"Số điện thoại của bạn không đúng định dạng!" : "Your phone number is not in the correct format!",
+	"Thành công! Chúng tôi sẽ gọi lại cho bạn!" : "Success! We will call you back!"
+}

@@ -1,0 +1,34 @@
+.breadcrumb {
+    @include clear_box;
+    position: relative;
+    z-index: 2;
+    ul {
+        float: left;
+        width: 100%;
+        li {
+            float: left;
+            &:after {
+                content: "»";
+                padding: 10px;
+                color: #222;
+                display: inline-block;
+            }
+            &:last-child:after {
+                content: "";
+                display: none;
+            }
+            a {
+                display: block;
+                float: left;
+                padding: 10px 0px;
+                color: #01be42;
+                font-weight: normal;
+            }
+            &:last-child {
+                a {
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

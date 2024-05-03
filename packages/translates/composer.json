@@ -1,0 +1,27 @@
+{
+    "name": "sudo/translates",
+    "description": "Translates Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Translate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Translate\\Providers\\TranslateServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

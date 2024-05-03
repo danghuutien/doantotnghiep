@@ -1,0 +1,87 @@
+$base_font_size: 14px;
+$sitebar_width: 200px;
+
+:root {
+	--dark: #cccccc;
+	--dark_black: #f9f9f9;
+	--light: #1d546f;
+	--border: #202020;
+	--light_text: #3A4149;
+	--dark_text: #ebedef;
+
+	--header: #1d546f;
+	--header_hover: #374c56;
+	--header_button: #202020;
+	--border_fix: #ada5a5;
+
+	--form_background: #ffffff;
+	--form_color: #1d546f;
+	--form_border: #202020;
+
+	--btn_background: #313e44;
+	--btn_text: #ebedef;
+	--btn_hover: #4c89a5;
+
+	--dropdown_background: #313e44;
+	--dropdown_text: #ebedef;
+	--dropdown_hover: #4c89a5;
+
+	--item_border: #202020;
+	--item_active: #4c89a5;
+}
+[data-theme="dark"] {
+	--dark: #3A4149;
+	--dark_black: #403d3d;
+	--light: #ffffff;
+	--border: #202020;
+	--light_text: #ebedef;
+	--dark_text: #3A4149;
+
+	--header: #3A4149;
+	--header_hover: #2d2828;
+	--header_button: #202020;
+	--border_fix: #202020;
+
+	--form_background: #3A4149;
+	--form_color: #ffffff;
+	--form_border: #202020;
+
+	--btn_background: #202020;
+	--btn_text: #ebedef;
+	--btn_hover: #5f7d6f;
+
+	--dropdown_background: #5f7d6f;
+	--dropdown_text: #ebedef;
+	--dropdown_hover: #202020;
+
+	--item_border: #202020;
+	--item_active: #5f7d6f;
+}
+// main color
+// Màu dùng chung
+$dark: var(--dark) !default;
+$dark_black: var(--dark_black) !default;
+$light: var(--light) !default;
+$border: var(--border) !default;
+$light_text: var(--light_text) !default;
+$dark_text: var(--dark_text) !default;
+// Header
+$header: var(--header) !default;
+$header_hover: var(--header_hover) !default;
+$header_button: var(--header_button) !default;
+$border_fix: var(--border_fix) !default;
+// form
+$form_background: var(--form_background) !default;
+$form_color: var(--form_color) !default;
+$form_border: var(--form_border) !default;
+// btn
+$btn_background: var(--btn_background) !default;
+$btn_text: var(--btn_text) !default;
+$btn_hover: var(--btn_hover) !default;
+// dropdown
+$dropdown_background: var(--dropdown_background) !default;
+$dropdown_text: var(--dropdown_text) !default;
+$dropdown_hover: var(--dropdown_hover) !default;
+// item
+$item_border: var(--item_border) !default;
+$item_active: var(--item_active) !default;

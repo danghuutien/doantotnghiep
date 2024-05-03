@@ -1,0 +1,27 @@
+{
+    "name": "sudo/packages-voucher",
+    "description": "Packages about voucher",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Tran Minh Trong",
+            "email": "trongtm102@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Voucher\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Voucher\\Providers\\VoucherServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

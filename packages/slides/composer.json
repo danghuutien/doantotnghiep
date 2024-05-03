@@ -1,0 +1,27 @@
+{
+    "name": "sudo/slide",
+    "description": "Slide Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Giang Hung Viet",
+            "email": "hungviet.giang@sudo.vn"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Slide\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Slide\\Providers\\SlideServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "sudo/call_me_back",
+    "description": "Goi lai cho toi",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tran hau kien",
+            "email": "kientrang96ht@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\CallMeBack\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\CallMeBack\\Providers\\CallMeBackServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

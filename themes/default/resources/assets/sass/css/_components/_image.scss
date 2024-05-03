@@ -1,0 +1,40 @@
+.image-square,
+.image-circle,
+.image-3-2,
+.image-16-9 {
+    width: 100%;
+    height: auto !important;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+    }
+    img {
+        @include image;
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+.image-square {
+    &:after {
+        padding-bottom: 100%;
+    }
+}
+.image-circle {
+	border-radius: 100%;
+	overflow: hidden;
+	&:after {
+        padding-bottom: 100%;
+    }
+}
+.image-3-2 {
+    &:after {
+        padding-bottom: 66.66%;
+    }
+}
+.image-16-9 {
+    &:after {
+        padding-bottom: 56.25%;
+    }
+}

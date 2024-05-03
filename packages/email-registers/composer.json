@@ -1,0 +1,27 @@
+{
+    "name": "sudo/email-register",
+    "description": "Email Register Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\EmailRegister\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\EmailRegister\\Providers\\EmailRegisterServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

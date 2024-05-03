@@ -1,0 +1,29 @@
+{
+    "name": "sudo/assets",
+    "description": "Asset Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Asset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Asset\\Providers\\AssetServiceProvider"
+            ],
+            "aliases": {
+                "Asset": "Sudo\\Asset\\Facades\\AssetFacade"
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+	"Cấu hình chung": "Setting General",
+	"Cấu hình trang chủ": "Setting Home",
+	"Cấu hình SEO": "Setting SEO",
+	"Cấu hình": "Setting",
+	"Cấu hình giao diện": "Theme Option",
+	"Cấu hình CSS": "Setting CSS",
+	"Cấu hình robots.txt": "Setting robots.txt",
+	"Liên hệ": "Contact",
+	"Cấu hình mạng xã hội": "Setting Social Link",
+	"Có": "Yes",
+	"Không": "No",
+
+	"Cho phép google lập chỉ mục nội dung Website": "Accept google index content Website",
+	"Các thẻ html chèn vào head": "HTML head",
+	"Các thẻ html chèn vào body": "HTML body",
+	"Các thẻ html chèn vào sau thẻ mở body": "HTML in after open tag body",
+	"Các thẻ html chèn vào trước thẻ đóng body": "HTML in before close tag body",
+
+	"Trang quản trị": "Go to Admin",
+	"Sửa nội dung này": "Edit",
+	"Việc Cài đặt SAI có thể ảnh hưởng nghiêm trọng tới hiệu suất SEO Website của bạn. Hãy cân nhắc kỹ.": "Improper installation can seriously affect your Website SEO performance. Please consider carefully.",
+
+
+	"x": "x"
+}

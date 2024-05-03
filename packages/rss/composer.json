@@ -1,0 +1,29 @@
+{
+    "name": "sudo/rss",
+    "description": "Generate rss for website in Sudo core",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Trinh Tuan Tai",
+            "email": "tuantai.trinh@sudo.vn"
+        }
+    ],
+    "require": {
+        "sudo/core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Rss\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Rss\\Providers\\RssServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "sudo/ecommerce",
+    "description": "Ecommerce Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Giang hung Viet",
+            "email": "hungviet.giang@sudo.vn"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-dompdf": "^0.9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Ecommerce\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Ecommerce\\Providers\\EcommerceServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

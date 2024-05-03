@@ -1,0 +1,46 @@
+{
+    "name": "sudo/core",
+    "description": "Base Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "intervention/image": "^2.4",
+        "aws/aws-sdk-php": "^3.133",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "laravel/helpers": "^1.2",
+        "sudo/assets": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Base\\": "base/src/",
+            "Sudo\\Table\\": "table/src/",
+            "Sudo\\Form\\": "form/src/",
+            "Sudo\\Category\\": "categories/src/",
+            "Sudo\\Media\\": "media/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Base\\Providers\\BaseServiceProvider",
+                "Sudo\\Table\\Providers\\TableServiceProvider",
+                "Sudo\\Form\\Providers\\FormServiceProvider",
+                "Sudo\\Category\\Providers\\CategoryServiceProvider",
+                "Sudo\\Media\\Providers\\MediaServiceProvider"
+            ],
+            "aliases": {
+                "ListData": "Sudo\\Table\\MyClass\\ListData",
+                "Form": "Sudo\\Form\\MyClass\\FormBuilder",
+                "ListCategory": "Sudo\\Category\\MyClass\\ListCategory"
+            }
+        }
+    }
+}

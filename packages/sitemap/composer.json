@@ -1,0 +1,29 @@
+{
+    "name": "sudo/sitemap",
+    "description": "Generate sitemap.xml for website in Sudo core",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Trinh Tuan Tai",
+            "email": "tuantai.trinh@sudo.vn"
+        }
+    ],
+    "require": {
+        "sudo/core": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Sitemap\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Sitemap\\Providers\\SitemapServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

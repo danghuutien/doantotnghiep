@@ -1,0 +1,133 @@
+@import '../_base/_mixin.scss';
+@import '../_base/_paginate.scss';
+@import '../_base/_css_content.scss';
+
+.contact {
+	&-show {
+		flex: 0 0 100%;
+	}
+	&-map{
+		.google-map {
+			iframe{
+				max-width: 100%;
+				width: 100%;
+				max-height: 502px;
+			}
+		}
+	}
+}
+.contact_content,
+.contact_form {
+	width: 50%;
+}
+.contact_content {
+	padding-right: 100px;
+	h2, span, a {
+		color: #1C2E3D;
+	}
+	ul {
+		li {
+			color: #0F1C49;
+			align-items: center;
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+		 	svg, img {
+		 		margin-right: 6px;
+		 		flex: 0 0 20px;
+		 	}
+		 	p {
+		 		flex: 0 0 calc(100% - 26px);
+		 		color: #4c4c4c;
+		 		.phone {
+		 			color: #FC0001;
+		 			cursor: pointer;
+		 			&:hover {
+		 				color: #007d3b;
+		 			}
+		 		}
+		 		&.time_work {
+			 		span {
+			 			display: block;
+			 			color: #288ad8;
+			 		}
+		 		}
+		 		.link_fanpage {
+		 			color: #DE0200;
+		 		}
+		 	}
+		 	p, span {
+		 		font-size: 16px;
+		 		line-height: 26px;
+		 	}
+		}
+	}
+	.desc {
+		color: #434343;
+	}
+}
+.contact_form {
+	background: #F1F2F2;
+	padding: 36px 42px 60px;
+	h2 {
+		color: #1C2E3D;
+		font-style: normal;
+	}
+	.desc {
+		color: #213842;
+	}
+	input, textarea {
+		font-family: 'SFProDisplay';
+		border: 1px solid #EEEEEE !important;
+		background: #fff;
+		color: #737373;
+		font-size: 16px;
+	}
+	input {
+		padding: 9px 17px;
+	}
+	textarea{
+		resize: none;
+		padding: 13px 17px;
+		height: 120px;
+	}
+	button {
+		padding: 10px 0;
+		background: #DE0200;
+		border: none;
+		cursor: pointer;
+		font-weight: 700;
+		font-style: normal;
+		transition: 0.5s;
+		&:hover {
+			background: $background_color;
+		}
+	}
+}
+@include mq(lg, max) {
+	.contact_content {
+		padding-right: 50px;
+	}
+	.contact_form {
+		padding: 36px 20px 60px;
+	}
+}
+@include mq(sm, max) {
+	.contact-show {
+		margin-top: 15px !important;
+	}
+	.contact_content,
+	.contact_form {
+		width: 100%;
+	}
+	.contact_content {
+		padding-right: 0;
+		margin-bottom: 30px;
+	}
+	.contact {
+		&-map {
+			margin-top: 30px !important;
+			margin-bottom: 40px !important;
+		}
+	}
+}

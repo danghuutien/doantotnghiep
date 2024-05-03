@@ -1,0 +1,29 @@
+{
+    "name": "sudo/admin-users",
+    "description": "Admin User Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Giang Hung Viet",
+            "email": "hungviet.giang@sudo.vn"
+        }
+    ],
+    "require": {
+        "pragmarx/google2fa-laravel": "^1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\AdminUser\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\AdminUser\\Providers\\AdminUserServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

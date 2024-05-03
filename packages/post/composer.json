@@ -1,0 +1,27 @@
+{
+    "name": "sudo/post",
+    "description": "Post Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Post\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Post\\Providers\\PostServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}

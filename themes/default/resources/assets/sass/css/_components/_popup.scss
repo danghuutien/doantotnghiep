@@ -1,0 +1,95 @@
+.popup {
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10001;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.2s;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    &-close {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 10001;
+    }
+    &-dialog {
+        width: 600px;
+        float: left;
+        margin: 30px auto;
+        position: relative;
+        z-index: 10002;
+    }
+    &-header {
+        @include clear_box;
+        position: relative;
+        background: #ffffff;
+        border-bottom: 1px solid #cccccc;
+        &__content {
+            p {
+                padding: 10px 10px;
+                background: #0000ff;
+                color: #ffffff;
+                font-weight: bold;
+            }
+        }
+        &__close {
+            position: absolute;
+            top: calc(-25px / 2);
+            right: calc(-25px / 2);
+            cursor: pointer;
+            i {
+                width: 25px;
+                height: 25px;
+                border-radius: 25px;
+                background: #1b1bca;
+                line-height: 25px;
+                text-align: center;
+                color: #ffffff;
+                transition: 0.2s;
+                &:hover {
+                    background: #0000ff;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+    &-body {
+        @include clear_box;
+        position: relative;
+        background: #ffffff;
+        padding: 10px;
+    }
+    &-footer {
+        @include clear_box;
+        position: relative;
+        background: #ffffff;
+        border-top: 1px solid #cccccc;
+        text-align: right;
+        &__content {
+            @include clear_box;
+            padding: 10px;
+            text-align: right;
+        }
+        .btn {
+            float: none;
+            display: inline-block;
+            margin-left: 5px;
+            padding: 8px 10px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$spacing_padding: 0 10 15;
+$spacing_margin: 0 10 15;
+
+@each $space in $spacing_padding {
+	.p-#{$space} {
+		padding: #{$space}px;
+	}
+	.pt-#{$space} {
+		padding-top: #{$space}px;
+	}
+	.pb-#{$space} {
+		padding-bottom: #{$space}px;
+	}
+	.pr-#{$space} {
+		padding-right: #{$space}px;
+	}
+	.pl-#{$space} {
+		padding-left: #{$space}px;
+	}
+}
+
+@each $space in $spacing_margin {
+	.m-#{$space} {
+		margin: #{$space}px;
+	}
+	.mt-#{$space} {
+		margin-top: #{$space}px;
+	}
+	.mb-#{$space} {
+		margin-bottom: #{$space}px;
+	}
+	.mr-#{$space} {
+		margin-right: #{$space}px;
+	}
+	.ml-#{$space} {
+		margin-left: #{$space}px;
+	}
+}

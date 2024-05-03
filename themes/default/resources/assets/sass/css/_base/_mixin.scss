@@ -1,0 +1,41 @@
+@mixin clear_box {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+@mixin image {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	display: block;
+	margin: 0 auto;
+}
+/* dùng cho một vài thuộc tính riêng cho trình duyện VD: transition, box-shadow */
+@mixin css3($atribute, $params) {
+	#{$atribute}: #{$params};
+	-webkit-#{$atribute}: #{$params};
+	-khtml-#{$atribute}: #{$params};
+	-moz-#{$atribute}: #{$params};
+	-ms-#{$atribute}: #{$params};
+	-o-#{$atribute}: #{$params};
+}
+/* căn giữa chiều dọc và ngang trên 1 box */
+@mixin center_element($height) {
+	display: grid;
+    place-items: center;
+    height: #{$height};
+}
+/* background opacity */
+@mixin bg-opacity($color, $opacity) {
+	position: relative;
+	&:before {
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #{$color};
+		opacity: #{$opacity};
+		position: absolute;
+	}
+}
