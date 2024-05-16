@@ -29,15 +29,15 @@ class AdminUserSeedCommand extends Command {
     	$user_name_array = [
     		[
     			'name' => 'dev',
-    			'email' => 'dev@sudo.vn',
+    			'email' => 'dev@gmail.com',
     			'password' => passwordGenerate(),
-    			'display_name' => 'Sudo Developer',
+    			'display_name' => 'Admin',
     		],
     		[
     			'name' => 'sudo',
-    			'email' => 'sudo@sudo.vn',
+    			'email' => 'sudo@gmail.vn',
     			'password' => passwordGenerate(),
-    			'display_name' => 'Sudo Ecommerce',
+    			'display_name' => 'Ecommerce',
     		]
     	];
     	$admin_users = [];

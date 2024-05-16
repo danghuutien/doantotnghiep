@@ -33,10 +33,6 @@ Trên đây là các bước để khởi tạo core, Hướng dẫn chi tiết 
   - Lấy lại QR CODE nếu mất tại phần changeInfo trong quản trị
   - Các route quản trị cần được bảo mật 2 bước vui lòng thêm middleware '2fa' vào route
 
-  dev - FwM!ePb1REOj
-sudo - PPburczlPq06
-dev - MjHB8%M16D61
-sudo - 1@$hP8Au2tHT
-dev - %NOlCUhek!hl
-sudo - hRUIGCa@Dbbk
+dev - 73m*pKHc!nL)
+sudo - 4Afa^%^FxqRs
 VCB - ATM NGUYEN VAN A 9704360000000000002 01/13 123456
